@@ -1,0 +1,10 @@
+# version: '3'
+services:
+  node:
+  # construire l'image docker a partir du dockerfile
+    build: ./
+    # monter un volume our synchroniser le repertoir local avec le repertoire de l'application dans le container
+    # volumes:
+    #   - ./app:/usr/src/app
+    ports:
+      - 3000:3000
